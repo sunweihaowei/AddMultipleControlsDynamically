@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="请输入title标签的个数" />
+
+        <EditText
+            android:id="@+id/num_et"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <Button
+            android:id="@+id/num_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#455178"
+            android:textColor="#fff"
+            android:text="确定" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/titles_ll"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#455178"
+        android:orientation="horizontal"></LinearLayout>
+    <TextView
+        android:id="@+id/shownum_tv"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
